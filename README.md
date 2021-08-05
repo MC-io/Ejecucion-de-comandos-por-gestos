@@ -1,19 +1,18 @@
-# PyPower Project - Emotion Detection using AI
+# Sistema de ejecución de comandos por medio de gestos y emociones a través de la captura de imágenes del rostro utilizando WebCam, Python, Keras y OpenCV
 
-## Emotion Detection
+## Deteccion de emociones
 
-- Kaggle Dataset :- https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data.
+- Usar train.py para entrenar al modelo
 
-- Use train.py file to train the model.
+- Cambiar la cantidad de clases de acuerdo a la necesidad
 
-- Change the number of classes according to you.
+- Experimentar con diferentes modelos ya entrenados
 
-- Do Experiment with different pre-trained models.
+- Ejecutar test.py para el reconocimiento de emociones
 
-- Execute the test.py file to run the Emotion Detection.
-
-- Enjoy Deep Learning.
-
-## The detailed tutorial is available in this video. Please do refer for better understanding.
+## El repositorio y el codigo de deteccion de emociones con deep learning fue sacado del video:
 
 - https://youtu.be/PulKlAZRoAY
+
+## y del repositorio:
+- 
