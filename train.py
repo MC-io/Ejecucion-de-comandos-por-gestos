@@ -44,8 +44,8 @@ model = Model(inputs = MobileNet.input, outputs = FC_Head)
 
 print(model.summary())
 
-train_data_dir = '/Users/durgeshthakur/Deep Learning Stuff/Emotion Classification/fer2013/train'
-validation_data_dir = '/Users/durgeshthakur/Deep Learning Stuff/Emotion Classification/fer2013/validation'
+train_data_dir = '/Users/usuario/Desktop/UNSA - 2021 Semestre A/Arquitectura de Computadores/Proyecto/Emotion-Detection-master/Emotion Classification/fer2013/train'
+validation_data_dir = '/Users/usuario/Desktop/UNSA - 2021 Semestre A/Arquitectura de Computadores/Proyecto/Emotion-Detection-master/Emotion Classification/fer2013/validation'
 
 train_datagen = ImageDataGenerator(
                     rescale=1./255,
@@ -98,7 +98,7 @@ learning_rate_reduction = ReduceLROnPlateau(monitor='val_acc',
 callbacks = [earlystop,checkpoint,learning_rate_reduction]
 
 model.compile(loss='categorical_crossentropy',
-              optimizer=Adam(lr=0.001),
+              optimizer=Adam(learning_rate=0.001),
               metrics=['accuracy']
               )
 
@@ -107,7 +107,7 @@ nb_validation_samples = 3006
 
 epochs = 25
 
-history = model.fit_generator(
+history = model.fit(
             train_generator,
             steps_per_epoch=nb_train_samples//batch_size,
             epochs=epochs,

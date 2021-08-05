@@ -1,18 +1,13 @@
-'''
-PyPower Projects
-Emotion Detection Using AI
-'''
-
-#USAGE : python test.py
-
 from keras.models import load_model
 from time import sleep
 from keras.preprocessing.image import img_to_array
 from keras.preprocessing import image
 import cv2
 import numpy as np
+import webbrowser
 
-face_classifier = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
+
+face_classifier = cv2.CascadeClassifier(cv2.data.haarcascades +'./haarcascade_frontalface_default.xml')
 classifier =load_model('./Emotion_Detection.h5')
 
 class_labels = ['Angry','Happy','Neutral','Sad','Surprise']
@@ -72,12 +67,16 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 
+res = max(langry,lsad, lsurprise, lhappy, lneutral);
 total = langry + lsad + lsurprise + lhappy + lneutral
 print("Estuviste " + str((langry*100)/total) + "% del tiempo enojado.")
 print("Estuviste " + str((lsad*100)/total) + "% del tiempo triste.")
 print("Estuviste " + str((lsurprise*100)/total) + "% del tiempo sorprendido.")
 print("Estuviste " + str((lhappy*100)/total) + "% del tiempo feliz.")
 print("Estuviste " + str((lneutral*100)/total) + "% del tiempo sin alguna emocion reconocible.")
+
+if res == lneutral:
+    webbrowser.open("https://www.youtube.com/watch?v=AUhOgfsDEmE")
 
 
 
