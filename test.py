@@ -28,7 +28,10 @@ lsad = 0
 lneutral = 0
 lsurprise = 0
 lhappy = 0
-
+linksAngry = ["https://www.youtube.com/watch?v=ZHPrM6VqASg","https://www.youtube.com/watch?v=DNrnDx-KZUY","https://www.youtube.com/watch?v=OnyjJDLcknA"]
+linksSurprise = ["https://www.youtube.com/watch?v=QViMjIrO3Xo","https://www.youtube.com/watch?v=L6sQyjxxASs","https://www.youtube.com/watch?v=YALPoSuHsm0"]
+linksSad = ["https://bemorewithless.com/sad/","https://www.youtube.com/watch?v=yyoOymMYHaU","https://www.youtube.com/watch?v=eqZwoLYEoHY"]
+linksNeutral = ["https://www.youtube.com/watch?v=ZHPrM6VqASg","https://www.youtube.com/watch?v=QViMjIrO3Xo","https://www.youtube.com/watch?v=OnyjJDLcknA"]
 # Contador de frames sacados
 counter = 0
 
