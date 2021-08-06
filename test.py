@@ -102,21 +102,12 @@ cv2.destroyAllWindows()
 
 total = langry + lsad + lsurprise + lhappy + lneutral
 
+print("\n\n\n\t**********RESUMEN DEL ESTADO DE ANIMO*********")
 print("Estuviste " + str(round((langry*100)/total,2)) + " % del tiempo enojado.")
 print("Estuviste " + str(round((lsad*100)/total,2)) + " % del tiempo triste.")
 print("Estuviste " + str(round((lsurprise*100)/total,2)) + " % del tiempo sorprendido.")
 print("Estuviste " + str(round((lhappy*100)/total,2)) + " % del tiempo feliz.")
 print("Estuviste " + str(round((lneutral*100)/total,2)) + " % del tiempo sin alguna emocion reconocible.")
-'''
-if res == lneutral:
-    webbrowser.open("https://www.youtube.com/watch?v=AUhOgfsDEmE")
-elif res == lsurprise:
-    webbrowser.open("https://www.youtube.com/watch?v=ZA9kag0UllY")
-elif res == langry:
-    webbrowser.open("https://www.youtube.com/watch?v=DNrnDx-KZUY")
-elif res == lsad:
-    webbrowser.open("https://www.friv5online.com/es")
-'''
 
 
 
